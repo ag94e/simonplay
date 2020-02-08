@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        // function diasEntreFechas(fecha1, fecha2){
+        //     const unDia = 1000 * 60 * 60 * 24;
+        //     const diferencia = Math.abs(fecha1 - fecha2);
+        //     return Math.floor(diferencia / unDia);
+        //     // let respuesta = Math.floor(diferencia / unDia);
+        //     // return Math.floor(respuesta/365);
+        // }
+        // const hoy = new Date()
+        // const nacimiento = new Date(1994, 1, 14)
+        function factorial(n){
+            if(!this.cache){
+                this.cache = {};
+            }
+            if (this.cache[n]) {
+                return this.cache[n];
+            }
+
+            if(n === 1) {
+                return 1;
+            }
+            this.cache[n] = n * factorial(n - 1);
+            return this.cache[n];
+        }
+    </script>
+</body>
+</html>
